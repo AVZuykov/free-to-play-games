@@ -1,0 +1,49 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "NodeNext"
+    }
+  },
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    // /* Bundler mode */
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "sourceMap": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "src",
+    "paths": {
+      "@api": ["./api/index"],
+      "@utils": ["./utils/index"],
+      "@hooks": ["./hooks/index"],
+      "@queries": ["./hooks/queries/index"],
+      "@models": ["./api/models/index"],
+      "@components": ["./components/index"],
+      "@providers": ["./providers/index"],
+      "@stores": ["./stores/index"],
+      "@images/*": ["./assets/images/*"],
+      "@tokens": ["./tokens/index"],
+      "@mixins": ["./mixins/index"],
+      "@constants": ["./constants"],
+      "@interfaces": ["./interfaces"],
+      "@modules": ["./modules"],
+      "@app/*": ["./*"]
+    }
+  },
+  "include": ["src"]
+}
